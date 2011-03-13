@@ -1,0 +1,5 @@
+Apple's Time Capsule spins down the disk pretty quickly. If you store your iTunes library
+on a Time Capsule, this often causes lag when unpausing music while the disk spins back
+up again. This script checks to see if the Time Capsule shared disk is mounted and if
+iTunes is running and just copies and rm's a file. Add this to cron to run every minute
+and the Time Capsule will not spin down!
