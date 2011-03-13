@@ -3,3 +3,8 @@ on a Time Capsule, this often causes lag when unpausing music while the disk spi
 up again. This script checks to see if the Time Capsule shared disk is mounted and if
 iTunes is running and just copies and rm's a file. Add this to cron to run every minute
 and the Time Capsule will not spin down!
+
+The script checks to see if the Time Capsule shared disk is currently mounted by checking
+for the existence of a hidden file: /Volumes/Data/.mounted - so this needs to be created.
+
+It also needs a file to copy. I use ~/TimeCapsuleSpinner.txt, which contains some text.
